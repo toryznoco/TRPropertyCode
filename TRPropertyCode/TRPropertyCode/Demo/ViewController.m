@@ -32,6 +32,8 @@
         // 自动生成属性代码
         NSArray *resultArr = responseObject[@"shops"];
         NSDictionary *dict = resultArr.firstObject;
+        
+        // 根据数据自动生成属性代码
         [dict createPropertyCode];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
